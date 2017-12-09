@@ -15,8 +15,8 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
+#with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+#    long_description = f.read()
 
 setup(
     name='hbcvt',
@@ -24,10 +24,10 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.0',
+    version='1.0.1',
 
     description='Hangul to 6-Dot Braille converter',
-    long_description=long_description,
+    long_description='Hangul to 6-Dot Braille converter',
 
     # The project's main homepage.
     url='https://github.com/hyonzin/hangul-braille-converter',
@@ -62,10 +62,11 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
 
     # What does your project relate to?
-    keywords='hangul to braille converter for the blind',
+    keywords='hangul to braille converter python project for the blind',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
@@ -105,4 +106,7 @@ setup(
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # pip to create the appropriate form of executable for the target platform.
     entry_points={},
+
+    # for tests
+    test_suite="tests",
 )

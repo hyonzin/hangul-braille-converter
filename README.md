@@ -6,7 +6,20 @@ python project for the blind
 * Number
 * Some special symbols
 ----
+INSTALL:
+```bash
+# use pip
+pip install hbcvt
 
+# or clone from GitHub
+git clone https://github.com/hyonzin/hangul-braille-converter.git
+cd hangul-braille-converter
+python setup.py install
+# test
+python setup.py test
+# or if py.test is installed
+py.test
+```
 USAGE:
 ```Python
 import hbcvt
