@@ -177,7 +177,7 @@ def letter(hangul_letter):
         if i == 2 and hangul in MATCH_H2B_JONG:
             result.append([hangul, MATCH_H2B_JONG[hangul]])
     if result == []:
-        result.append([hangul, [0,0,0,0,0,0]])
+        result.append([hangul, [[0,0,0,0,0,0]]])
     return result
 
 
